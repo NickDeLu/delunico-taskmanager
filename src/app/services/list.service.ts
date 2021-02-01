@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class ListService {
   listsUrl:string = 
-  'https://delunico-taskmanager.herokuapp.com:8080/lists';
+  'https://delunico-taskmanager.herokuapp.com/lists';
   constructor(private http:HttpClient) { }
 
   // Get Lists
