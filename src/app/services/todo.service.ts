@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class TodoService {
   tasksUrl:string = 
-  'http://localhost:8080/tasks';
+  'https://delunico-taskmanager.herokuapp.com:8080/tasks';
   constructor(private http:HttpClient) { }
 
   // Get todos
