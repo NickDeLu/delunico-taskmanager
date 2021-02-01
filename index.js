@@ -18,9 +18,9 @@ app.use((req, res, next) => {
   next();
 });
 app.use(express.static(__dirname + '/dist/angular-crash-todolist'));
-app.get('/*',function(req,res){
-  res.sendFile(path.join(__dirname+'/dist/angular-crash-todolist/index.html'));
-});
+// app.get('/*',function(req,res){
+//   res.sendFile(path.join(__dirname+'/dist/angular-crash-todolist/index.html'));
+// });
 
 app.use('/tasks', taskRoutes);
 app.use('/lists', listRoutes);

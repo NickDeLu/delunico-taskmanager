@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class ListService {
   listsUrl:string = 
-  'http://192.168.0.8:8080/lists';
+  'http://localhost:8080/lists';
   constructor(private http:HttpClient) { }
 
   // Get Lists

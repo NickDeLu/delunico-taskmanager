@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class TodoService {
   tasksUrl:string = 
-  'http://192.168.0.8:8080/tasks';
+  'http://localhost:8080/tasks';
   constructor(private http:HttpClient) { }
 
   // Get todos
