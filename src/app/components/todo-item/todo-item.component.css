@@ -1,0 +1,17 @@
+  .todo {
+    background: #f4f4f4;
+    padding: 10px;
+  }
+  
+  .is-complete {
+    text-decoration: line-through;
+  }
+  .hide{
+    display: none;
+  }
+  
+  mat-card:first-child(0){
+    position: absolute;
+    top:25%;
+    left:5%;
+  }

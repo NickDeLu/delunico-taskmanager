@@ -1,0 +1,12 @@
+
+<h1>Lists</h1>
+
+<app-add-list (addList)="addList($event)"></app-add-list>
+    <app-list-item 
+        *ngFor="let list of lists"
+        [list]="list"
+        (deleteList)="deleteList($event)"
+        (updateTasks)="onLoadTasks($event)"
+        (editList)="editList($event)"
+    >
+</app-list-item>

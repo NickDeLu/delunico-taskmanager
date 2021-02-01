@@ -1,0 +1,32 @@
+  .hide{
+    display: none;
+  }
+  .card-list{
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+  }
+  .card-list .icon{
+    position: absolute;
+    right:5%;
+    top:25%;
+    cursor: pointer;
+    color:rgb(63, 197, 221);
+  }
+  .card-list .icon mat-icon{
+    margin:0px 10px;
+    font-size:30px;
+  }
+  @media only screen and (min-width: 1700px) {
+    .card-list .icon mat-icon{
+      margin:0vw 0.8vw;
+      font-size:2vw;
+    }
+    body{
+      font-size:2vw;
+    }
+    .card-list{
+      min-height:10vh;
+      margin-bottom: 5vh;
+    }
+  }

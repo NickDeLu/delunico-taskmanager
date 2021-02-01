@@ -1,0 +1,9 @@
+<mat-card class ="card-list" (click)="onLoadTasks(list)">
+    <div [ngClass]="show()">{{list.title}}</div> 
+    <app-edit-list [ngClass]="hide()" (editList)="onEdit($event)"></app-edit-list>
+    <div class ="icon">
+        <mat-icon (click)="onToggleHidden()">edit</mat-icon>
+        <mat-icon (click)="onDelete(list)">delete</mat-icon>
+    </div>   
+</mat-card>
+ 

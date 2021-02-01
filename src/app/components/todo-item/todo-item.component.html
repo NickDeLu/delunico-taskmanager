@@ -1,0 +1,10 @@
+<mat-card class ="card" (click)="onToggle(task)" [ngClass]="setClasses()">
+   <div [ngClass]="show()">{{task.title}}</div> 
+    <app-edit-task [ngClass]="hide()" (editTask)="onEdit($event)"></app-edit-task>
+    <div class ="icon">
+        <mat-icon (click)="onToggleHidden()">edit</mat-icon>
+        <mat-icon (click)="onDelete(task)">delete</mat-icon>
+    </div>
+</mat-card>
+
+
