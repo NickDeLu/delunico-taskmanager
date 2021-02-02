@@ -46,7 +46,7 @@ export class ListsComponent implements OnInit {
         this.lists[index].selected = true;
       });
     })
-    this.onLoadTasks(list);
+    this.onLoadTasks(this.lists[index]);
   }
 
   editList(list:List){
