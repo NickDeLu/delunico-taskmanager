@@ -44,9 +44,11 @@ export class ListsComponent implements OnInit {
       this.listService.getLists().subscribe(lists =>{
         this.lists = lists;
         this.lists[index].selected = true;
+        this.onLoadTasks(this.lists[index]);
       });
+      
     })
-    this.onLoadTasks(this.lists[index]);
+    
   }
 
   editList(list:List){
