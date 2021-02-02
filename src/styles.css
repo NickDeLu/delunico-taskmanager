@@ -26,8 +26,8 @@ mat-card .icon mat-icon{
   font-size:30px;
 }
 .card:first-child, mat-card:first-child{
-  width:75%;
-  padding-right: 25%;
+  width:50%;
+  padding-right: 40%;
   word-wrap: break-word;
 }
 .flex-container{
