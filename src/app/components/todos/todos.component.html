@@ -1,15 +1,17 @@
 
 <mat-drawer-container class="task-container" autosize>
     
-    <mat-drawer #drawer class="example-sidenav" mode="side" opened="true" >
-        <app-lists (updateTasks)="onLoadTasks($event)"></app-lists>
-    </mat-drawer>
-    
+        <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
+            <mat-icon [ngClass]="hide()"  (click)="drawer.toggle()">menu</mat-icon>
+            <h1 (click)="drawer.toggle()">Lists</h1>
+            <app-lists (updateTasks)="onLoadTasks($event)"></app-lists>
+        </mat-drawer>
+
     <div class="flex-container">
-    
+        
         <div class="example-sidenav-content">
-            <button type="button" mat-button (click)="drawer.toggle()">Toggle Lists</button>
-            <h1>Tasks</h1>
+            <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+            <h1 (click)="drawer.toggle()">Tasks</h1>
 
             <app-add-todo (addTask)="addTask($event)"></app-add-todo>
             <app-todo-item 

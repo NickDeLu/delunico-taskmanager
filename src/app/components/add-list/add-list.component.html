@@ -2,7 +2,8 @@
 <form class ="form" (ngSubmit)="onSubmit()">
     <mat-form-field>
         <mat-label>Create List</mat-label>
-        <input matInput type ="text" name ="title" [(ngModel)]="title" placeholder="Ex. Shopping List">
+        <input type="hidden" autofocus="true" />
+        <input matInput type ="text" name ="title" [(ngModel)]="title" placeholder="Ex. Shopping List" restoreFocus="false">
     </mat-form-field>
 </form>
     

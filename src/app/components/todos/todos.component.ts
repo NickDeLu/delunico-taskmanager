@@ -9,7 +9,7 @@ import { ListService } from '../../services/list.service';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-
+  hidden:boolean = false;
   tasks:Task[];
   listId:number;
   showFiller = true;
@@ -17,7 +17,6 @@ export class TodosComponent implements OnInit {
 
   ngOnInit(): void {
     this.listService.getLists().subscribe(lists=>{
-      console.log(lists[0].id);
       this.listId = lists[0].id;
       this.getTasks();
     })
@@ -52,5 +51,18 @@ export class TodosComponent implements OnInit {
       this.tasks[this.tasks.indexOf(task)] = updatedTask;
       this.getTasks();
     })
+  }
+  hide(){
+    let classes = {}
+    if(window.outerWidth>=830 || window.innerWidth>=830){
+      this.hidden=true;
+    }else{
+      this.hidden=false;
+    }
+      classes = {
+      'hide':this.hidden
+      }
+    
+    return classes;
   }
 }

@@ -14,16 +14,21 @@ body{
   margin:10px 10px;
   width:90%;
 }
-.card .icon{
+mat-card .icon{
   position: absolute;
   right:5%;
   top:25%;
   cursor: pointer;
   color:rgb(63, 197, 221);
 }
-.card .icon mat-icon{
+mat-card .icon mat-icon{
   margin:0px 10px;
   font-size:30px;
+}
+.card:first-child, mat-card:first-child{
+  width:75%;
+  padding-right: 25%;
+  word-wrap: break-word;
 }
 .flex-container{
   display:flex;
@@ -31,7 +36,7 @@ body{
   justify-content: center;
 }
 @media only screen and (min-width: 1700px) {
-  .card .icon mat-icon{
+  .card .icon mat-icon, mat-card .icon mat-icon{
     margin:0vh 0.8vw;
     font-size:2vw;
   }

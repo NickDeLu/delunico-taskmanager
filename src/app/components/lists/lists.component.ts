@@ -13,7 +13,10 @@ export class ListsComponent implements OnInit {
   constructor(private listService:ListService) { }
 
   ngOnInit(): void {
-    this.getLists();
+    this.listService.getLists().subscribe(lists =>{
+      this.lists = lists;
+      this.lists[0].selected = true;
+    });
   }
   getLists():void{
     this.listService.getLists().subscribe(lists =>{
@@ -22,6 +25,7 @@ export class ListsComponent implements OnInit {
   }
   onLoadTasks(list){
     this.updateTasks.emit(list);
+    list.selected=true;
   }
 
   deleteList(list:List){
@@ -37,12 +41,26 @@ export class ListsComponent implements OnInit {
   addList(list:List){
     this.listService.addList(list).subscribe( ()=>{
       this.getLists();
+      this.lists[0].selected = true;
     })
   }
 
   editList(list:List){
+    let index = this.lists.indexOf(list);
     this.listService.updateList(list).subscribe( ()=>{
-      this.getLists();
+      this.listService.getLists().subscribe(lists =>{
+        this.lists = lists;
+        this.lists[index].selected = true;
+      });
     })
+  }
+  updateSelection(list:List){
+    list.selected=true;
+    
+    this.lists.forEach(listitem => {
+      if(listitem.id !=list.id){
+        listitem.selected = false;
+      }
+    });
   }
 }

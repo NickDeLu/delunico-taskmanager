@@ -9,8 +9,9 @@
   .example-sidenav {
     height:100%;
     padding: 5px 30px;
-    min-width:30%;
-    background-color: rgba(185, 234, 253, 0.671);
+    width:30%;
+    min-width:300px;
+    background-color: rgb(135, 175, 190);
   }
   .example-sidenav-content button{
     position: absolute;
@@ -22,6 +23,31 @@
   .task-container{
     min-height:100vh;
   }
+  h1{
+    color: #333;
+  }
+  mat-icon{
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 60px;
+  }
+  .hide{
+    display:none;
+  }
+  @media only screen and (max-width: 800px) {
+    .example-sidenav,.example-sidenav-content {
+      width:80%;
+    }
+      .example-sidenav{
+        width:100%;
+      }
+      .task-container{
+        display :flex;
+        flex-direction: column;
+      }
+  }
+
   @media only screen and (min-width: 1700px) {
     .example-sidenav {
       padding: 0vh 2vw;

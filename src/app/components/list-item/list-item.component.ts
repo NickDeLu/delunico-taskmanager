@@ -13,12 +13,28 @@ export class ListItemComponent implements OnInit {
   @Output() deleteList: EventEmitter<List> = new EventEmitter();
   @Output() editList: EventEmitter<List> = new EventEmitter();
   @Output() updateTasks: EventEmitter<List> = new EventEmitter();
+  @Output() updateSelection: EventEmitter<List> = new EventEmitter();
   constructor(private listService:ListService) { }
   
   isHidden:boolean = true;
+  isSelected:boolean = false;
 
   ngOnInit(): void {
   }
+  select(list){
+    let classes = {}
+    if(list.selected){
+      classes = {
+        'select':true
+      }
+    }else{
+      classes = {
+        'select':false
+      }
+    }
+      return classes;
+  }
+  
   show(){
     let classes = {
       'hide':!this.isHidden
@@ -37,7 +53,9 @@ export class ListItemComponent implements OnInit {
 
   // Updating tasks
   onLoadTasks(list:List){
+    console.log("lists are loaded")
     this.updateTasks.emit(list);
+    this.updateSelection.emit(list);
   }
 
   // On delete

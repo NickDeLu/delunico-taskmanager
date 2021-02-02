@@ -9,9 +9,3 @@
   .hide{
     display: none;
   }
-  
-  mat-card:first-child(0){
-    position: absolute;
-    top:25%;
-    left:5%;
-  }
