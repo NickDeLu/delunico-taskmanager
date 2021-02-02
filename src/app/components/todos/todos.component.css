@@ -39,13 +39,14 @@
     .example-sidenav,.example-sidenav-content {
       width:80%;
     }
-      .example-sidenav{
-        width:100%;
-      }
-      .task-container{
-        display :flex;
-        flex-direction: column;
-      }
+    .example-sidenav{
+      width:100%;
+    }
+    .task-container{
+       display :flex;
+       flex-direction: column;
+    }
+   
   }
 
   @media only screen and (min-width: 1700px) {
@@ -55,5 +56,8 @@
     .example-sidenav-content button{
       top:2vh;
       font-size: 2vw;
+    }
+    mat-icon{
+      font-size: 5vw;
     }
   }
