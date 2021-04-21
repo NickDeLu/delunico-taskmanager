@@ -10,7 +10,7 @@
     <div class="flex-container">
         
         <div class="example-sidenav-content">
-            <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+            <mat-icon (click)="drawer.toggle()" style="cursor: pointer;">menu</mat-icon>
             <h1 (click)="drawer.toggle()">Tasks</h1>
 
             <app-add-todo (addTask)="addTask($event)"></app-add-todo>
