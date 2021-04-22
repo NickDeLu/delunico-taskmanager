@@ -22,6 +22,7 @@ MaterialUI
   <li>TypeScript</li>
   <li>JavaScript</li>
   <li>HTML + CSS</li>
+</ul>
 
 ## Hosting
 This project was hosted on the free heroku web server. All commits and updates to this project were performed using the heroku CLI and bash interface.
