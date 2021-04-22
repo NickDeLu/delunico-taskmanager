@@ -2,7 +2,7 @@
 <mat-drawer-container class="task-container" autosize>
     
         <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
-            <mat-icon [ngClass]="hide()"  (click)="drawer.toggle()">menu</mat-icon>
+            <mat-icon [ngClass]="hide()" (click)="drawer.toggle()" style="cursor: pointer;">menu</mat-icon>
             <h1 (click)="drawer.toggle()">Lists</h1>
             <app-lists (updateTasks)="onLoadTasks($event)"></app-lists>
         </mat-drawer>
