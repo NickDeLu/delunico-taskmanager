@@ -45,7 +45,7 @@ This mysql2 database was implemented by integrating the heroku clearDB add-on wi
   <li>Each List's tasks can be edited or deleted as desired.</li>
   <li>You may add as many Lists or tasks as desired.</li>
 </ul>
-#### Cross it Off! ####
+#### Cross it Off: ####
 
   Each task can be crossed off to keep track of your progress and it will remember that state next time you open the app.
   
