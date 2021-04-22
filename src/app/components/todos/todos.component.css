@@ -8,7 +8,8 @@
   }
   .example-sidenav {
     height:100%;
-    padding: 5px 30px;
+    padding: 5px 0px;
+    padding-left: 20px;
     width:30%;
     min-width:300px;
     background-color: rgb(135, 175, 190);
@@ -51,7 +52,7 @@
 
   @media only screen and (min-width: 1700px) {
     .example-sidenav {
-      padding: 0vh 2vw;
+      padding-left: 2vw;
     }
     .example-sidenav-content button{
       top:2vh;
