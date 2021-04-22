@@ -31,9 +31,11 @@ This project was hosted on the free heroku web server. All commits and updates t
 This mysql2 database was implemented by integrating the heroku clearDB add-on with my spring app.
 
 ## Design Patterns
-MVC design pattern
-Restful Service Layer
-Single Page Application (SPA)
+<ul>
+  <li>MVC design pattern</li>
+  <li>Restful Service Layer</li>
+  <li>Single Page Application (SPA)</li>
+</ul>
 
 ## Features
 
