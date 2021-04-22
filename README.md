@@ -38,11 +38,11 @@ Single Page Application (SPA)
 ## Features
 
 #### CRUD: ####
-  
-  Each List's name can be edited or deleted as desired. 
-  Each List's tasks can be edited or deleted as desired.
-  You may add as many Lists or tasks as desired.
-
+<ul>
+  <li>Each List's name can be edited or deleted as desired. </li>
+  <li>Each List's tasks can be edited or deleted as desired.</li>
+  <li>You may add as many Lists or tasks as desired.</li>
+</ul>
 #### Cross it Off! ####
 
   Each task can be crossed off to keep track of your progress and it will remember that state next time you open the app.
