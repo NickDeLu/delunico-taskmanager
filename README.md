@@ -1,27 +1,55 @@
-# AngularCrashTodolist
+# delunico-taskmanager http://delunico-taskmanager.herokuapp.com/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+This task managing web application uses full CRUD operations between the front-end build in Angular and the backend using a node.js API connected to a MySQL database. It offers easy task management as well as the option to save multiple lists.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## REST API
 
-## Code scaffolding
+The api was created by using node module express in the node.js server. All requests for GET, POST, PUT, and DELETE were routed to database queries that perform CRUD operations on a CLEARDB mysql database add-on hosted on heroku. All requests were performed with HTTPS TLS encrytion to ensure the privacy protection of personal tasks or lists.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Technologies Incorporated
+Angular Web Framework 
+Node.js Runtime Environment
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+##Libraries
+MaterialUI
 
-## Running unit tests
+##Languages
+TypeScript
+JavaScript
+HTML + CSS
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Hosting
+This project was hosted on the free heroku web server. All commits and updates to this project were performed using the heroku CLI and bash interface.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Database
+This mysql2 database is achieved by integrating the heroku clearDB add-on with my spring app.
 
-## Further help
+## Design Patterns
+MVC design pattern
+Restful Service Layer
+Single Page Application (SPA)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Features
+
+#### CRUD: ####
+  
+  Each List's name can be edited or deleted as desired. 
+  Each List's tasks can be edited or deleted as desired.
+  You may add as many Lists or tasks as desired.
+
+#### Cross it Off! ####
+
+  Each task can be crossed off to keep track of your progress and it will remember that state next time you open the app.
+  
+#### Sidebar: ####
+ 
+  The sidebar can be toggled with the hamburger menu button to either full screen view on smaller devices, or to the side view on desktop. It contains all of the saved lists and highlights the current active list thats loaded. 
+  
+#### Responsiveness: ####
+
+  This application is responsive to almost all viewports by using css @media selectors and more. The font-size, margins, and layout will change depending on the viewport dimensions of the device such as mobile, tablet, or desktop. 
+  
+
