@@ -9,17 +9,19 @@ The api was created by using node module express in the node.js server. All requ
 
 
 ## Technologies Incorporated
-Angular Web Framework 
-Node.js Runtime Environment
+<ul>
+  <li>Angular Web Framework </li>
+  <li>Node.js Runtime Environment</li>
+</ul>
 
-##Libraries
+## Libraries
 MaterialUI
 
-##Languages
-TypeScript
-JavaScript
-HTML + CSS
-
+## Languages
+<ul>
+  <li>TypeScript</li>
+  <li>JavaScript</li>
+  <li>HTML + CSS</li>
 
 ## Hosting
 This project was hosted on the free heroku web server. All commits and updates to this project were performed using the heroku CLI and bash interface.
