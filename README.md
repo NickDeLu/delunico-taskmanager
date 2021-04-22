@@ -28,7 +28,7 @@ MaterialUI
 This project was hosted on the free heroku web server. All commits and updates to this project were performed using the heroku CLI and bash interface.
 
 ## Database
-This mysql2 database is achieved by integrating the heroku clearDB add-on with my spring app.
+This mysql2 database was implemented by integrating the heroku clearDB add-on with my spring app.
 
 ## Design Patterns
 MVC design pattern
