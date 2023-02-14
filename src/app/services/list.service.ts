@@ -5,36 +5,35 @@ import { Observable } from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type':'application/json'
-  })
-}
+    'Content-Type': 'application/json',
+  }),
+};
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ListService {
-  listsUrl:string = 
-  'https://delunico-taskmanager.herokuapp.com/lists';
-  constructor(private http:HttpClient) { }
+  listsUrl: string = 'https://delunico-taskmanager.up.railway.app/lists';
+  constructor(private http: HttpClient) {}
 
   // Get Lists
-  getLists():Observable<List[]>{
+  getLists(): Observable<List[]> {
     return this.http.get<List[]>(`${this.listsUrl}`);
   }
 
   // Update List
-  updateList(list:List):Observable<List>{
+  updateList(list: List): Observable<List> {
     const url = `${this.listsUrl}`;
-    return this.http.put<List>(url,list,httpOptions);
+    return this.http.put<List>(url, list, httpOptions);
   }
 
   // Delete List
-  deleteList(id:number):Observable<List>{
+  deleteList(id: number): Observable<List> {
     const url = `${this.listsUrl}/${id}`;
-    return this.http.delete<List>(url,httpOptions);
+    return this.http.delete<List>(url, httpOptions);
   }
   // Add List
-  addList(list:List):Observable<List>{
-    return this.http.post<List>(this.listsUrl,list,httpOptions);
+  addList(list: List): Observable<List> {
+    return this.http.post<List>(this.listsUrl, list, httpOptions);
   }
 }
