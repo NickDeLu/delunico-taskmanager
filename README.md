@@ -1,4 +1,4 @@
-# delunico-taskmanager http://delunico-taskmanager.herokuapp.com/
+# delunico-taskmanager https://delunico-taskmanager.up.railway.app/
 
 This task managing web application uses full CRUD operations between the front-end build in Angular and the backend using a node.js API connected to a MySQL database. It offers easy task management as well as the option to save multiple lists.
 
@@ -25,7 +25,7 @@ MaterialUI
 </ul>
 
 ## Hosting
-This project was hosted on the free heroku web server. All commits and updates to this project were performed using the heroku CLI and bash interface.
+The React front end was deployed on railway.app configured with a CICD automatic deploys connected to this repository's main branch.
 
 ## Database
 This mysql2 database was implemented by integrating the heroku clearDB add-on with my spring app.
